@@ -1,7 +1,10 @@
-import { Button, Container, ThemeProvider } from '@mui/material'
+import { Box, Button, Container, ThemeProvider, Typography } from '@mui/material'
 import { useEffect } from 'react';
 import theme from './styles/theme';
 import Appbar from './components/appbar';
+import Banner from './components/banner';
+import Promotions from './components/promotions';
+import Products from './components/products';
 
 function App() {
   useEffect(() =>{
@@ -18,19 +21,26 @@ function App() {
     background: '#fff'
   }}
   >
-    {
-      <Appbar/>
-      /*
+  
+      <Appbar />
+      <Banner />
+      <Promotions />
+      <Box display="flex" justifyContent={"center"} sx={{ p:4 }}>
+        <Typography variant="h4">Найпопулярніше</Typography>
+      </Box>
+      <Products />
+    
+      {/*
       
-      Banner
+     
       Promotions
       Title
       Products
       footer
       searchbox
       appdrawer
-      */
-    }
+*/}
+    
     <Button variant='contained'> Test</Button>
   </Container>
   </ThemeProvider>
