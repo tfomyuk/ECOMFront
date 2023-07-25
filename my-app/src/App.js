@@ -1,10 +1,39 @@
-import { RouterProvider } from 'react-router-dom'
-import './App.css';
-import { router } from './router'
+import { Button, Container, ThemeProvider } from '@mui/material'
+import { useEffect } from 'react';
+import theme from './styles/theme';
+import Appbar from './components/appbar';
 
 function App() {
+  useEffect(() =>{
+    document.title = 'React Material UI - Home';
+  },[]);
+
   return (
-    <RouterProvider router={router} />
+    <ThemeProvider theme = {theme}>
+
+   
+  <Container
+  maxWidth = 'xl'
+  sx={{
+    background: '#fff'
+  }}
+  >
+    {
+      <Appbar/>
+      /*
+      
+      Banner
+      Promotions
+      Title
+      Products
+      footer
+      searchbox
+      appdrawer
+      */
+    }
+    <Button variant='contained'> Test</Button>
+  </Container>
+  </ThemeProvider>
   );
 }
 
