@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material/styles";
-//import { darken, lighten } from "polished";
+import { darken, lighten } from "polished";
 
 export const Colors = {
     primary: "#0776ad",
@@ -45,6 +45,39 @@ export const Colors = {
             disableElevation: true,
           },
         },
+        MuiDrawer: {
+          styleOverrides:{
+            paper:{
+              width: 250,
+              background: Colors.primary,
+              color: Colors.white,
+              borderRadius: '0px 100px 0px 0px',
+              borderRight: `3px solid ${Colors.secondary}`
+
+            }
+          }
+
+        },
+
+        MyShopButton: {
+          styleOverrides:{
+            root: {
+              color: Colors.white
+            },
+            primary:{
+              background: Colors.primary,
+              "&;hover": {
+                background: lighten(0.05, Colors.primary),
+              }
+            },
+            secondary: {
+              background: Colors.secondary,
+              "&;hover": {
+                background: lighten(0.05, Colors.secondary),
+              }
+            },
+          }
+        }
     }
 
   });

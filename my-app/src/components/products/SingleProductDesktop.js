@@ -38,7 +38,7 @@ export default function SingleProductDesktop({ product, matches }) {
         </ProductFavButton>
         {(showOptions || matches) && (
           <ProductAddToCart show={showOptions} variant="contained">
-            Add to cart
+            В кошик
           </ProductAddToCart>
         )}
         <ProductActionsWrapper show={showOptions || matches}>
@@ -56,7 +56,7 @@ export default function SingleProductDesktop({ product, matches }) {
           </Stack>
         </ProductActionsWrapper>
       </Product>
-      <ProductMeta product={product} />
+      <ProductMeta product={product} matches={matches}/>
       <ProductDetailDialog product={product} />
     </>
   );

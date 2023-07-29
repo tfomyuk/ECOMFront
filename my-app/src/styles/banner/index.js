@@ -1,6 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Colors } from "../theme";
+import { lighten } from "polished";
 
 export const BannerContainer = styled(Box)(({ matches, theme }) => ({
   display: "flex",
@@ -77,7 +78,7 @@ export const BannerShopButton = styled(Button, {
   padding: "20px 0px",
   color: Colors.white,
   fontWeight: "bold",
-  fontSize: "16px",
+  fontSize: "14px",
   [theme.breakpoints.down("sm")]: {
     padding: "10px 0px",
     fontSize: "14px",

@@ -48,7 +48,6 @@ export const MyList = styled(List)(({ type }) => ({
 }));
 
 
-
 export const DrawerCloseButton = styled(IconButton)(() => ({
   position: 'absolute',
   top: 10,

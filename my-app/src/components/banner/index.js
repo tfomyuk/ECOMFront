@@ -1,6 +1,6 @@
 import { Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { BannerContainer, BannerContent, BannerDescription, BannerImage, BannerTitle } from "../../styles/banner";
+import { BannerContainer, BannerContent, BannerDescription, BannerImage, BannerShopButton, BannerTitle } from "../../styles/banner";
 
 
 export default function Banner() {
@@ -21,6 +21,7 @@ export default function Banner() {
             <BannerDescription variant="subtitle">
                 Час носити креативні речі, які надихають створювати неповторний імідж. 100% зроблено в Україні.
             </BannerDescription>
+            <BannerShopButton color="primary">До каталогу</BannerShopButton>
 
         </BannerContent>
         </BannerContainer>
