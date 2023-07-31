@@ -20,8 +20,8 @@ export default function Footer() {
   return (
     <Box
       sx={{
-        background: Colors.shaft,
-        color: Colors.white,
+        background: Colors.primary,
+        color: Colors.secondary,
         p: { xs: 4, md: 10 },
         pt: 12,
         pb: 12,
@@ -30,7 +30,7 @@ export default function Footer() {
     >
       <Grid container spacing={2} justifyContent="center">
         <Grid item md={6} lg={4}>
-          <FooterTitle variant="body1">About us</FooterTitle>
+          <FooterTitle variant="body1">JetCat.space</FooterTitle>
           <Typography variant="caption2">
             Lorem ipsum dolor sit amet cons adipisicing elit sed do eiusm tempor
             incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam,
@@ -48,16 +48,16 @@ export default function Footer() {
           </Box>
         </Grid>
         <Grid item md={6} lg={2}>
-          <FooterTitle variant="body1">information</FooterTitle>
+          <FooterTitle variant="body1">інформація</FooterTitle>
           <List>
             <ListItemText>
               <Typography lineHeight={2} variant="caption2">
-                About Us
+                Про нас
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption2">
-                Order Tracking
+                Каталог
               </Typography>
             </ListItemText>
             <ListItemText>
@@ -73,36 +73,36 @@ export default function Footer() {
           </List>
         </Grid>
         <Grid item md={6} lg={2}>
-          <FooterTitle variant="body1">my account</FooterTitle>
+          <FooterTitle variant="body1">Особистий кабінет</FooterTitle>
           <List>
             <ListItemText>
               <Typography lineHeight={2} variant="caption2">
-                Login
+                Вхід
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption2">
-                My Cart
+                Кошик
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption2">
-                My Account
+                Профіль
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption2">
-                Wishlist
+                Обране
               </Typography>
             </ListItemText>
           </List>
         </Grid>
         <Grid item md={6} lg={4}>
-          <FooterTitle variant="body1">newsletter</FooterTitle>
+          <FooterTitle variant="body1">Новини</FooterTitle>
           <Stack>
             <SubscribeTf
               color="primary"
-              label="Email address"
+              label="Електронна адреса"
               variant="standard"
             />
             <Button
@@ -110,7 +110,7 @@ export default function Footer() {
               sx={{ mt: 4, mb: 4 }}
               variant="contained"
             >
-              Subscribe
+              Підписка
             </Button>
           </Stack>
         </Grid>

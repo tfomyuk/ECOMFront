@@ -59,7 +59,7 @@ import {
             alignItems="center"
             justifyContent={"space-between"}
           >
-            Product title
+            Інформація про товар
             <IconButton onClick={onClose}>
               <CloseIcon />
             </IconButton>
@@ -88,20 +88,20 @@ import {
                 justifyContent="space-between"
               >
                 <IncDec />
-                <Button variant="contained">Add to Cart</Button>
+                <Button variant="contained">В кошик</Button>
               </Box>
               <Box
                 display="flex"
                 alignItems="center"
-                sx={{ mt: 4, color: Colors.light }}
+                sx={{ mt: 4, color: Colors.secondary }}
               >
                 <FavoriteIcon sx={{ mr: 2 }} />
-                Add to wishlist
+                Додати в обране
               </Box>
-              <Box
+              <Box 
                 sx={{
                   mt: 4,
-                  color: Colors.dove_gray,
+                  color: Colors.secondary,
                 }}
               >
                 <FacebookIcon />

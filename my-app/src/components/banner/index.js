@@ -10,7 +10,7 @@ export default function Banner() {
 
     return(
         <BannerContainer>
-            {/*<BannerImage src='/images/banner/banner.jpg'/>*/}
+            {/*<BannerImage src='/images/banner/jetcat.jpg'/>*/}
         <BannerContent>
             <Typography variant='h6'>Оптові та кастомні замовлення</Typography>
 

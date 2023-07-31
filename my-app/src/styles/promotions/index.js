@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import { Box, styled } from "@mui/system";
 import { Colors } from "../theme";
-import "@fontsource/montez";
+import "@fontsource/montserrat";
 
 export const PromotionsContainer = styled(Box)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
@@ -12,7 +12,7 @@ export const PromotionsContainer = styled(Box)(({ theme }) => ({
   alignItems: "center",
   padding: "20px 0px 20px 0px",
   overflow: "hidden",
-  background: Colors.secondary,
+  background: Colors.primary,
 }));
 
 export const MessageText = styled(Typography)(({ theme }) => ({
