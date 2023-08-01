@@ -9,6 +9,7 @@ import SearchBox from '../../components/search';
 import Products from '../../components/products';
 import Footer from '../../components/footer';
 import AppDrawer from '../../components/drawer';
+import Cart from '../../components/cart';
 
 
 function Home() {
@@ -38,6 +39,7 @@ function Home() {
       <Products />
       <Footer />
       <AppDrawer />
+      <Cart />
       <SearchBox />
       </UIProvider>
    </Stack>

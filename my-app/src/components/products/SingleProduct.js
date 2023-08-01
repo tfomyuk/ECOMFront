@@ -16,10 +16,13 @@ import FitScreenIcon from "@mui/icons-material/FitScreen";
 import useDialogModal from "../../hooks/useDialogModal";
 import ProductDetail from "../productdetail";
 import ProductMeta from "./ProductMeta";
+import useCart from "../../hooks/useCart";
 
 export default function SingleProduct({ product, matches }) {
   const [ProductDetailDialog, showProductDetailDialog, closeProductDialog] =
     useDialogModal(ProductDetail);
+
+  const {addToCart,addToCartText} = useCart(product);
 
   const [showOptions, setShowOptions] = useState(false);
 
@@ -52,7 +55,7 @@ export default function SingleProduct({ product, matches }) {
           </Stack>
         </ProductActionsWrapper>
       </Product>
-      <ProductAddToCart variant="contained">В кошик</ProductAddToCart>
+      <ProductAddToCart onClick={addToCart} variant="contained">В кошик</ProductAddToCart>
       <ProductDetailDialog product={product} />
     </>
   );
