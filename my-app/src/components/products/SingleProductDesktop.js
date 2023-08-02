@@ -45,7 +45,7 @@ export default function SingleProductDesktop({ product, matches }) {
           <ProductAddToCart 
           onClick={addToCart}
           show={showOptions} variant="contained">
-          В кошик
+         {addToCartText}
           </ProductAddToCart>
         )}
         <ProductActionsWrapper show={showOptions || matches}>

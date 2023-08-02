@@ -10,13 +10,14 @@ export default function Cart() {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.down('md'));
 
-    const cartContent = cart.map(item => (
+    const cartContent = cart.map( item => (
         <Box key={item.id}>
             <Box
             display="flex"
             sx={{ pt:2, pb:2 }}
             alignItems="start"
             justifyContent={"space-between"}>
+                
             <Avatar src={item.image} sx={{width: 96, height: 96, mr:2 }} />
             <Box display="flex" flexDirection={"column"}>
                 <Typography variant="h6">{item.name}</Typography>
@@ -42,7 +43,7 @@ export default function Cart() {
         PaperProps={{
             sx:{
                 width: matches ? '100%' : 500,
-                background: Colors.secondary,
+                background: Colors.light_gray,
                 borderRadius: 0
             }
         }}
