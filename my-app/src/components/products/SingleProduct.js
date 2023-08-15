@@ -22,7 +22,7 @@ export default function SingleProduct({ product, matches }) {
   const [ProductDetailDialog, showProductDetailDialog, closeProductDialog] =
     useDialogModal(ProductDetail);
 
-  const {addToCart,addToCartText} = useCart(product);
+  const { addToCart, addToCartText } = useCart(product);
 
   const [showOptions, setShowOptions] = useState(false);
 
@@ -55,7 +55,10 @@ export default function SingleProduct({ product, matches }) {
           </Stack>
         </ProductActionsWrapper>
       </Product>
-      <ProductAddToCart onClick={addToCart} variant="contained">В кошик</ProductAddToCart>
+      <ProductAddToCart onClick={addToCart} variant="contained">
+        {addToCartText}      
+        
+      </ProductAddToCart>
       <ProductDetailDialog product={product} />
     </>
   );

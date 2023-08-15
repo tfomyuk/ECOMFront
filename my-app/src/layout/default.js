@@ -1,16 +1,21 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import Footer from '../components/footer'
+import { Box } from '@mui/material'
+import { AppbarHeader } from '../styles/appbar'
+import Appbar from '../components/appbar'
+
+
 
 function Default() {
   return (
     <>
-      <header>
-        <h1>Page Header</h1>
-      </header>
-
       <section>
         <Outlet />
       </section>
+     
+      <Footer />
+  
     </>
   )
 }

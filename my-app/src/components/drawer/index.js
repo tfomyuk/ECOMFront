@@ -14,6 +14,8 @@ import {
   import { DrawerCloseButton } from "../../styles/appbar";
   import { lighten } from "polished";
   import { Colors } from "../../styles/theme";
+import { Link } from "react-router-dom";
+import { useState } from "react";
   
   const MiddleDivider = styled((props) => (
     <Divider variant="middle" {...props} />
@@ -22,6 +24,13 @@ import {
   
   export default function AppDrawer() {
     const { drawerOpen, setDrawerOpen } = useUIContext();
+    const [anchorButton, setAnchorButton] = useState(null);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    
+    const handleCloseProducts = () => {
+        setAnchorButton(null);
+        setIsMenuOpen(false);
+      };
   
     return (
       <>
@@ -37,23 +46,43 @@ import {
         )}
         <Drawer open={drawerOpen}>
           <List>
-            <ListItemButton>
+            <ListItemButton  onClick={() => {
+                  handleCloseProducts();
+                }}
+                component={Link}
+                to="/">
               <ListItemText>Про нас</ListItemText>
             </ListItemButton>
             <MiddleDivider />
-            <ListItemButton>
+            <ListItemButton onClick={() => {
+                  handleCloseProducts();
+                }}
+                component={Link}
+                to="futbolky">
               <ListItemText>Футболки</ListItemText>
             </ListItemButton>
             <MiddleDivider />
-            <ListItemButton>
+            <ListItemButton onClick={() => {
+                  handleCloseProducts();
+                }}
+                component={Link}
+                to="/chashky">
               <ListItemText>Чашки</ListItemText>
             </ListItemButton>
             <MiddleDivider />
-            <ListItemButton>
+            <ListItemButton onClick={() => {
+                  handleCloseProducts();
+                }}
+                component={Link}
+                to="/puzzly">
               <ListItemText>Пазли</ListItemText>
             </ListItemButton>
             <MiddleDivider />
-            <ListItemButton>
+            <ListItemButton onClick={() => {
+                  handleCloseProducts();
+                }}
+                component={Link}
+                to="/kontakty">
               <ListItemText>Зв'язок</ListItemText>
             </ListItemButton>
             <MiddleDivider />

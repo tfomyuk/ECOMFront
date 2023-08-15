@@ -20,25 +20,24 @@ export default function Footer() {
   return (
     <Box
       sx={{
+        positon: 'absolute',
+        display: "flex",
+        justifyContent: "center",
         background: Colors.primary,
         color: Colors.secondary,
         p: { xs: 4, md: 10 },
         pt: 12,
         pb: 12,
-        fontSize: { xs: '12px', md: '14px' }
+        fontSize: { xs: '12px', md: '14px' },
+        mt: '80px'
       }}
     >
       <Grid container spacing={2} justifyContent="center">
         <Grid item md={6} lg={4}>
           <FooterTitle variant="body1">JetCat.space</FooterTitle>
-          <Typography variant="caption2">
-            Lorem ipsum dolor sit amet cons adipisicing elit sed do eiusm tempor
-            incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud.
-          </Typography>
           <Box
             sx={{
-              mt: 4,
+              mt: 2,
               color: Colors.dove_gray,
             }}
           >
@@ -46,6 +45,12 @@ export default function Footer() {
             <TwitterIcon sx={{ mr: 1 }} />
             <InstagramIcon />
           </Box>
+          <Typography variant="caption2" >
+            Lorem ipsum dolor sit amet cons adipisicing elit sed do eiusm tempor
+            incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud.
+          </Typography>
+         
         </Grid>
         <Grid item md={6} lg={2}>
           <FooterTitle variant="body1">інформація</FooterTitle>

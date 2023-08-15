@@ -37,7 +37,7 @@ function Home() {
         <Typography variant="h4">Найпопулярніше</Typography>
       </Box>
       <Products />
-      <Footer />
+
       <AppDrawer />
       <Cart />
       <SearchBox />

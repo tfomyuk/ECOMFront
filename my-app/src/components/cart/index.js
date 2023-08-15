@@ -62,6 +62,7 @@ export default function Cart() {
                 </Typography>
 
                 <Typography variant="body1" color={Colors.muted}>
+                    {""}
                     Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                 </Typography>
 
@@ -80,7 +81,7 @@ export default function Cart() {
                 </Button>
 
            </Box> : (<Box
-           sx={{p:4,}}
+           sx={{ p: 4 }}
            display="flex"
            justifyContent={"center"}
            flexDirection="column"
