@@ -84,6 +84,7 @@ const handleCloseProducts = () => {
                 <ListItemText primary='Пазли' />
                 <ListItemText primary='Інше' />
               <ListItemText primary='Контакти' />*/}
+              
                 <ListItemButton>
                     <ListItemIcon>
                     <SearchIcon onClick={() => setShowSearchBox(true)}/>
