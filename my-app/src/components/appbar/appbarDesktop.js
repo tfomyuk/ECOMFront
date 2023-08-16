@@ -73,10 +73,21 @@ const handleCloseProducts = () => {
                   handleCloseProducts();
                 }}
                 component={Link}
+                to="/inshe"
+              >
+                Інше
+              </MenuItem>
+
+              <MenuItem
+                onClick={() => {
+                  handleCloseProducts();
+                }}
+                component={Link}
                 to="/kontakty"
               >
                 Контакти
               </MenuItem> 
+            
    
                 {/*<ListItemText primary='Кружки' component={Link} to="/cups"/>
                 <ListItemText primary='Шопери' />

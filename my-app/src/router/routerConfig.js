@@ -7,6 +7,7 @@ import Bags from "../pages/Bags/Bags.jsx";
 import Contact from "../pages/Contact/Contact.jsx";
 import Cups from "../pages/Cups/Cups";
 import Puzzles from "../pages/Puzzles/Puzzles";
+import Inshe from "../pages/Inshe/Inshe.jsx";
 
 
 const appRouter = createBrowserRouter([
@@ -31,6 +32,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/puzzly",
         element: <Puzzles />,
+      },
+      {
+        path: "/inshe",
+        element: <Inshe />,
       },
       { path: "/kontakty", element: <Contact /> },
     ],
