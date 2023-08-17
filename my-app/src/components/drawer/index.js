@@ -46,14 +46,7 @@ import { useState } from "react";
         )}
         <Drawer open={drawerOpen}>
           <List>
-            <ListItemButton  onClick={() => {
-                  handleCloseProducts();
-                }}
-                component={Link}
-                to="/">
-              <ListItemText>Про нас</ListItemText>
-            </ListItemButton>
-            <MiddleDivider />
+         
             <ListItemButton onClick={() => {
                   handleCloseProducts();
                 }}
@@ -78,12 +71,28 @@ import { useState } from "react";
               <ListItemText>Пазли</ListItemText>
             </ListItemButton>
             <MiddleDivider />
+            <ListItemButton  onClick={() => {
+                  handleCloseProducts();
+                }}
+                component={Link}
+                to="/shopery">
+              <ListItemText>Шопери</ListItemText>
+            </ListItemButton>
+            <MiddleDivider />
+             <ListItemButton onClick={() => {
+                  handleCloseProducts();
+                }}
+                component={Link}
+                to="/inshe">
+              <ListItemText>Інше</ListItemText>
+            </ListItemButton>
+            <MiddleDivider />
             <ListItemButton onClick={() => {
                   handleCloseProducts();
                 }}
                 component={Link}
                 to="/kontakty">
-              <ListItemText>Зв'язок</ListItemText>
+              <ListItemText>Контакти</ListItemText>
             </ListItemButton>
             <MiddleDivider />
           </List>

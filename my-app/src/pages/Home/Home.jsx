@@ -14,7 +14,7 @@ import Cart from '../../components/cart';
 
 function Home() {
   useEffect(() =>{
-    document.title = 'React Material UI - Home';
+    document.title = 'Home';
   },[]);
 
   return (
