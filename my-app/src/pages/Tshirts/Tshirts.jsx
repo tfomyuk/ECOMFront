@@ -1,30 +1,12 @@
-import { ThemeProvider } from '@emotion/react';
 import React, { useEffect } from 'react'
-import theme from '../../styles/theme';
-import { Stack } from '@mui/material';
-import { UIProvider } from '../../context/ui';
-import Appbar from '../../components/appbar';
-import AppDrawer from '../../components/drawer';
-import Cart from '../../components/cart';
-import SearchBox from '../../components/search';
+
 
 function Tshirts() {
   useEffect(() => {
-    document.title = "Home";
+    document.title = "Футболки";
   }, []);
   return (
-    <ThemeProvider theme={theme}>
-     
-        <Stack>
-          <UIProvider>
-            <Appbar />
-            <AppDrawer />
-            <Cart />
-            <SearchBox />
-          </UIProvider>
-        </Stack>
-    
-    </ThemeProvider>
+   <div>Футболки</div>
   );
 }
 
