@@ -1,12 +1,14 @@
 import { Container, Grid, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { products } from "../../data";
 import SingleProduct from "./SingleProduct";
 import SingleProductDesktop from "./SingleProductDesktop";
+import AppPagination from "../pagination";
+import { useState } from "react";
 
 export default function Products() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("md"));
+  const [products, setProducts] = useState([]);
 
   const renderProducts = products.map((product) => (
     <Grid
@@ -19,8 +21,11 @@ export default function Products() {
       flexDirection={"column"}
       alignItems="center"
     >
-      {matches ? (<SingleProduct product={product} matches={matches} />)
-      : (<SingleProductDesktop product={product} matches={matches} />) }
+      {matches ? (
+        <SingleProduct product={product} matches={matches} />
+      ) : (
+        <SingleProductDesktop product={product} matches={matches} />
+      )}
     </Grid>
   ));
 
@@ -28,13 +33,14 @@ export default function Products() {
     <Container>
       <Grid
         container
-        spacing={{ xs:2, md: 3}}
+        spacing={{ xs: 2, md: 3 }}
         justifyContent={"center"}
         sx={{ margin: "20px 4px 10px 4px" }}
-        columns={{ xs: 4, sm: 8, md:12 }}
+        columns={{ xs: 4, sm: 8, md: 12 }}
       >
         {renderProducts}
       </Grid>
+      <AppPagination setProducts={(p) => setProducts(p)} />
     </Container>
   );
 }

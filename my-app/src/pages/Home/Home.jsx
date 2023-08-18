@@ -1,15 +1,10 @@
-import { Box, Button, Container, Stack, ThemeProvider, Typography } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import { useEffect } from 'react';
-import theme from '../../styles/theme';
-import { UIProvider } from '../../context/ui';
-import Appbar from '../../components/appbar';
 import Banner from '../../components/banner';
 import Promotions from '../../components/promotions';
 import SearchBox from '../../components/search';
 import Products from '../../components/products';
-import Footer from '../../components/footer';
-import AppDrawer from '../../components/drawer';
-import Cart from '../../components/cart';
+
 
 
 function Home() {
@@ -18,8 +13,6 @@ function Home() {
   },[]);
 
   return (
-    <ThemeProvider theme = {theme}>
-
    
   <Container
   maxWidth = 'xl'
@@ -27,9 +20,6 @@ function Home() {
     background: '#fff'
   }}
   >
-  <Stack>
-  <UIProvider>
-  <Appbar />
       <Banner />
       <Promotions />
       <SearchBox />
@@ -37,14 +27,8 @@ function Home() {
         <Typography variant="h4">Найпопулярніше</Typography>
       </Box>
       <Products />
-
-      <AppDrawer />
-      <Cart />
-      <SearchBox />
-      </UIProvider>
-   </Stack>
   </Container>
-  </ThemeProvider>
+
   );
 }
 
