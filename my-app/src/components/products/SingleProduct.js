@@ -1,15 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
-  ExtraActionsWrapper,
   Product,
   ProductActionButton,
   ProductActionsWrapper,
   ProductAddToCart,
   ProductFavButton,
   ProductImage,
-  ProductMetaWrapper,
 } from "../../styles/product";
-import { Stack, Tooltip, Typography } from "@mui/material";
+import { Stack, Tooltip} from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import FitScreenIcon from "@mui/icons-material/FitScreen";
@@ -44,12 +42,12 @@ export default function SingleProduct({ product, matches }) {
             </ProductFavButton>
             <ProductActionButton>
               <Tooltip placement="left" title="share this product">
-                <ShareIcon color="primary" />
+                <ShareIcon color="secondary" />
               </Tooltip>
             </ProductActionButton>
             <ProductActionButton onClick={() => showProductDetailDialog()}>
               <Tooltip placement="left" title="Full view">
-                <FitScreenIcon color="primary" />
+                <FitScreenIcon color="secondary" />
               </Tooltip>
             </ProductActionButton>
           </Stack>

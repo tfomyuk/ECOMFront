@@ -24,7 +24,7 @@ const handleCloseProducts = () => {
     return (
        
         <AppbarContainer>
-            <AppbarHeader>JetCat.space</AppbarHeader>
+            <AppbarHeader>jetcat.space</AppbarHeader>
 
 
             <MyList type='row'>
@@ -98,7 +98,7 @@ const handleCloseProducts = () => {
               
                 <ListItemButton>
                     <ListItemIcon>
-                    <SearchIcon onClick={() => setShowSearchBox(true)}/>
+                    <SearchIcon color="secondary" onClick={() => setShowSearchBox(true)}/>
                     </ListItemIcon>
                 </ListItemButton>
             </MyList>

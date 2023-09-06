@@ -28,7 +28,7 @@ const { cart, setShowCart } = useUIContext();
             color: matches && Colors.secondary,
           }}>
          <Badge badgeContent={cart && cart.length} color="secondary">
-          <ShoppingCartIcon onClick={() => setShowCart(true)}/>
+          <ShoppingCartIcon color='secondary' onClick={() => setShowCart(true)}/>
           </Badge>
         </ListItemIcon>
       </ListItemButton>
@@ -46,7 +46,7 @@ const { cart, setShowCart } = useUIContext();
 
           }}
         >
-          <PersonIcon />
+          <PersonIcon color="secondary"/>
         </ListItemIcon>
       </ListItemButton>
       <Divider orientation="vertical" flexItem />
@@ -63,7 +63,7 @@ const { cart, setShowCart } = useUIContext();
 
           }}
         >
-          <FavoriteIcon />
+          <FavoriteIcon color="secondary"/>
         </ListItemIcon>
       </ListItemButton>
       <Divider orientation="vertical" flexItem />

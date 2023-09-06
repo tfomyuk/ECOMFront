@@ -12,16 +12,16 @@ export default function Banner() {
         <BannerContainer>
             {/*<BannerImage src='/images/banner/jetcat.jpg'/>*/}
         <BannerContent>
-            <Typography variant='h6'>Оптові та кастомні замовлення</Typography>
+            <Typography fontFamily='Bitter' variant='h6'>Оптові та кастомні замовлення</Typography>
 
-            <BannerTitle variant="h3">
+            <BannerTitle fontFamily="Bitter" variant="h3">
             Нові принти
              </BannerTitle>
 
-            <BannerDescription variant="subtitle">
+            <BannerDescription fontFamily="Bitter" variant="subtitle">
                 Час носити креативні речі, які надихають створювати неповторний імідж. 100% зроблено в Україні.
             </BannerDescription>
-            <BannerShopButton color="primary">До каталогу</BannerShopButton>
+            <BannerShopButton fontFamily="Bitter" color="secondary">За покупками</BannerShopButton>
 
         </BannerContent>
         </BannerContainer>

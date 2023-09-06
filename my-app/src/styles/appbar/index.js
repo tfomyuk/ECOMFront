@@ -3,7 +3,7 @@ import {styled} from "@mui/material/styles";
 import { Box } from "@mui/system";
 import "@fontsource/montserrat";
 import { Colors } from "../theme";
-import { textPopUpTop } from "../../animation";
+//import { textPopUpTop } from "../../animation";
 
 export const AppbarContainer = styled(Box)(() => ({    
     display: 'flex',
@@ -16,12 +16,13 @@ export const AppbarContainer = styled(Box)(() => ({
 export const AppbarHeader = styled(Typography)(() => ({
   padding: "4px",
   flexGrow: 1,
-  fontSize: "3em",
-  fontFamily: '"Roboto", "cursive"',
+  fontSize: "2em",
+  fontFamily:'Bitter',
+  fontWeight: 'bold',
   color: Colors.secondary,
-  "&:hover": {
+  /*{"&:hover": 
     animation: `${textPopUpTop} 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both`,
-  },
+  }*/
 }));
 
 export const ActionIconsContainerMobile = styled(Box)(() => ({
@@ -45,7 +46,7 @@ export const MyList = styled(List)(({ type }) => ({
     flexGrow: 3,
   justifyContent: "center",
   alignItems: "center",
-  color: Colors.primary,
+  color: Colors.secondary,
   
 }));
 

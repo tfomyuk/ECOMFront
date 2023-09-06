@@ -1,15 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
-  ExtraActionsWrapper,
   Product,
   ProductActionButton,
   ProductActionsWrapper,
   ProductAddToCart,
   ProductFavButton,
   ProductImage,
-  ProductMetaWrapper,
 } from "../../styles/product";
-import { Stack, Tooltip, Typography } from "@mui/material";
+import { Stack, Tooltip } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import FitScreenIcon from "@mui/icons-material/FitScreen";
@@ -17,6 +15,7 @@ import useDialogModal from "../../hooks/useDialogModal";
 import ProductDetail from "../productdetail";
 import ProductMeta from "./ProductMeta";
 import useCart from "../../hooks/useCart";
+//import { Colors } from "../../styles/theme";
 
 export default function SingleProductDesktop({ product, matches }) {
 
@@ -44,7 +43,7 @@ export default function SingleProductDesktop({ product, matches }) {
         {(showOptions || matches) && (
           <ProductAddToCart 
           onClick={addToCart}
-          show={showOptions} variant="contained">
+          show={showOptions} variant="contained" color="secondary">
          {addToCartText}
           </ProductAddToCart>
         )}
@@ -52,12 +51,12 @@ export default function SingleProductDesktop({ product, matches }) {
           <Stack direction={matches ? "row" : "column"}>
             <ProductActionButton>
               <Tooltip placement="left" title="share this product">
-                <ShareIcon color="primary" />
+                <ShareIcon color="secondary" />
               </Tooltip>
             </ProductActionButton>
             <ProductActionButton onClick={() => showProductDetailDialog()}>
               <Tooltip placement="left" title="Full view">
-                <FitScreenIcon color="primary" />
+                <FitScreenIcon color="secondary" />
               </Tooltip>
             </ProductActionButton>
           </Stack>

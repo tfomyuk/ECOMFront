@@ -45,7 +45,7 @@ export const BannerImage = styled("img")(({ src, theme }) => ({
 
 export const BannerTitle = styled(Typography)(({ matches, theme }) => ({
   lineHeight: 1.5,
-  fontSize: "72px",
+  fontSize: "68px",
   marginBottom: "20px",
   [theme.breakpoints.down('sm')]: {
     fontSize: '42px',    
@@ -77,6 +77,7 @@ export const BannerShopButton = styled(Button, {
 })(({ theme }) => ({
   padding: "20px 40px",
   color: Colors.white,
+  borderRadius:"10px",
   fontWeight: "bold",
   fontSize: "1rem",
   [theme.breakpoints.down("sm")]: {
