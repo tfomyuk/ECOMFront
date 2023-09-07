@@ -8,6 +8,8 @@ import Contact from "../pages/Contact/Contact.jsx";
 import Cups from "../pages/Cups/Cups";
 import Puzzles from "../pages/Puzzles/Puzzles";
 import Inshe from "../pages/Inshe/Inshe.jsx";
+import Checkout from "../pages/Checkout/Checkout";
+import Confirmation from "../pages/Checkout/Confirmation";
 
 
 const appRouter = createBrowserRouter([
@@ -38,6 +40,8 @@ const appRouter = createBrowserRouter([
         element: <Inshe />,
       },
       { path: "/kontakty", element: <Contact /> },
+      { path: "/checkout", element: <Checkout /> },
+      { path: "/checkout/success", element: <Confirmation /> },
     ],
   },
 ]);

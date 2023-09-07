@@ -1,10 +1,25 @@
-import { RouterProvider } from 'react-router-dom'
+import { RouterProvider, useLocation } from 'react-router-dom'
+import { useEffect } from 'react';
 import './App.css';
 import appRouter from './router/routerConfig';
 
+const ScrollToTop = () =>{
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname])
+
+  return null;
+}
+
 function App() {
   return (
-    <RouterProvider router={appRouter} />
+    <div className='app'>
+    <RouterProvider router={appRouter}>
+      <ScrollToTop />
+    </RouterProvider>
+    </div>
   );
 }
 

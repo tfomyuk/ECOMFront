@@ -38,6 +38,27 @@ export const Colors = {
         },
     },
 
+    typography: {
+      fontFamily: ['Bitter', 'sans-serif'].join(','),
+      fontSize: 11,
+      h1: {
+        fontFamily: ['Bitter', 'sans-serif'].join(','),
+      fontSize: 38,
+      },
+      h2: {
+        fontFamily: ['Bitter', 'sans-serif'].join(','),
+      fontSize: 36,
+      },
+      h3: {
+        fontFamily: ['Bitter', 'sans-serif'].join(','),
+      fontSize: 20,
+      },
+      h4: {
+        fontFamily: ['Bitter', 'sans-serif'].join(','),
+      fontSize: 14,
+      },
+    },
+
     components: {
         MuiButton: {
           defaultProps: {
