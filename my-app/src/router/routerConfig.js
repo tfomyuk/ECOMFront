@@ -10,6 +10,7 @@ import Puzzles from "../pages/Puzzles/Puzzles";
 import Inshe from "../pages/Inshe/Inshe.jsx";
 import Checkout from "../pages/Checkout/Checkout";
 import Confirmation from "../pages/Checkout/Confirmation";
+import ItemDetails from "../components/itemDetails";
 
 
 const appRouter = createBrowserRouter([
@@ -42,6 +43,7 @@ const appRouter = createBrowserRouter([
       { path: "/kontakty", element: <Contact /> },
       { path: "/checkout", element: <Checkout /> },
       { path: "/checkout/success", element: <Confirmation /> },
+      { path: "/item/:itemId", element:<ItemDetails />},
     ],
   },
 ]);

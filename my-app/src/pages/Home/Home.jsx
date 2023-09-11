@@ -4,6 +4,7 @@ import Banner from '../../components/banner';
 import Promotions from '../../components/promotions';
 import SearchBox from '../../components/search';
 import Products from '../../components/products';
+import ShoppingList from '../../components/shoppingList';
 
 
 
@@ -26,7 +27,8 @@ function Home() {
       <Box display="flex" justifyContent={"center"} sx={{ p:4 }}>
         <Typography variant="h4">Найпопулярніше</Typography>
       </Box>
-      <Products />
+      <ShoppingList/>
+     
   </Container>
 
   );

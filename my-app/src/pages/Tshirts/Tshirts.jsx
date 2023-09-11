@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Products from '../../components/products';
 
 
 function Tshirts() {
@@ -6,7 +7,7 @@ function Tshirts() {
     document.title = "Футболки";
   }, []);
   return (
-   <div>Футболки</div>
+    <Products />
   );
 }
 

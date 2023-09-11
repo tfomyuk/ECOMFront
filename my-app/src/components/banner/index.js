@@ -9,8 +9,7 @@ export default function Banner() {
     const matches = useMediaQuery(theme.breakpoints.down('md'));
 
     return(
-        <BannerContainer>
-            {/*<BannerImage src='/images/banner/jetcat.jpg'/>*/}
+        <BannerContainer objectfit="cover">
         <BannerContent>
             <Typography fontFamily='Bitter' variant='h6'>Оптові та кастомні замовлення</Typography>
 

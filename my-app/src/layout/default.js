@@ -9,6 +9,7 @@ import theme from "../styles/theme";
 import { ThemeProvider } from "@emotion/react";
 import AppDrawer from "../components/drawer";
 import Cart from "../components/cart";
+import CartMenu from "../components/cartMenu";
 
 function Default() {
   return (
@@ -24,7 +25,7 @@ function Default() {
           <Footer />
 
           <AppDrawer />
-          <Cart />
+          <CartMenu />
           <SearchBox />
         </UIProvider>
       </Stack>

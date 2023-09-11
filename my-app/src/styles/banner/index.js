@@ -14,9 +14,10 @@ export const BannerContainer = styled(Box)(({ matches, theme }) => ({
     flexDirection: "column",
     alignItems: "center",
   },
-  // backgroundImage: `url(/images/banner/banner.png)`,
-  // backgroundRepeat: "no-repeat",
-  // backgroundPosition: "center",
+  backgroundImage: `url(/images/banner/carousel3.webp)`,
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: "absolute",
+  backgroundSize: "95%"
 }));
 
 export const BannerContent = styled(Box)(() => ({
@@ -30,10 +31,10 @@ export const BannerContent = styled(Box)(() => ({
 
 export const BannerImage = styled("img")(({ src, theme }) => ({
   src: `url(${src})`,
-  // backgroundImage: `url(${src})`,
+  //backgroundImage: `url/images/banner/carousel2.webp)`,
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
-  width: "1000px",
+  width: "80%",
   [theme.breakpoints.down("md")]: {
     width: "350px",
   },

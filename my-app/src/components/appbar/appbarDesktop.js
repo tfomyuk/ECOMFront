@@ -23,7 +23,7 @@ const handleCloseProducts = () => {
 
     return (
        
-        <AppbarContainer>
+        <AppbarContainer >
             <AppbarHeader>jetcat.space</AppbarHeader>
 
 

@@ -1,7 +1,6 @@
 import { IconButton, List, Typography } from "@mui/material";
 import {styled} from "@mui/material/styles";
 import { Box } from "@mui/system";
-import "@fontsource/montserrat";
 import { Colors } from "../theme";
 //import { textPopUpTop } from "../../animation";
 
@@ -10,13 +9,14 @@ export const AppbarContainer = styled(Box)(() => ({
     marginTop: 4,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: '2px 8px'
+    padding: '2px 8px',
+    
 }));
 
 export const AppbarHeader = styled(Typography)(() => ({
   padding: "4px",
   flexGrow: 1,
-  fontSize: "2em",
+  fontSize: "3em",
   fontFamily:'Bitter',
   fontWeight: 'bold',
   color: Colors.secondary,
@@ -34,7 +34,8 @@ export const ActionIconsContainerMobile = styled(Box)(() => ({
   width: '100%',
   alignItems: 'center',
   zIndex: 99,  
-  borderTop: `1px solid ${Colors.border}`
+  borderTop: `1px solid ${Colors.border}`,
+  
 }));
 
 export const ActionIconsContainerDesktop = styled(Box)(() => ({
