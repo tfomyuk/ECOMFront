@@ -65,12 +65,12 @@ const ItemDetails = () => {
             {/* ACTIONS */}
             <Box flex="1 1 50%" mb="40px">
               <Box display="flex" justifyContent="space-between">
-                <Box>Home/Item</Box>
-                <Box>Prev Next</Box>
+                <Box>Головна/Продукти</Box>
+                <Box>Попередній/Наступний</Box>
               </Box>
     
               <Box m="65px 0 25px 0">
-                <Typography variant="h3">{item?.attributes?.name}</Typography>
+                <Typography variant="h1">{item?.attributes?.name}</Typography>
                 <Typography>${item?.attributes?.price}</Typography>
                 <Typography sx={{ mt: "20px" }}>
                   {item?.attributes?.longDescription}
@@ -103,15 +103,15 @@ const ItemDetails = () => {
                   }}
                   onClick={() => dispatch(addToCart({ item: { ...item, count } }))}
                 >
-                  ADD TO CART
+                  ДОДАТИ У КОШИК
                 </Button>
               </Box>
               <Box>
                 <Box m="20px 0 5px 0" display="flex">
                   <FavoriteBorderOutlinedIcon />
-                  <Typography sx={{ ml: "5px" }}>ADD TO WISHLIST</Typography>
+                  {/*<Typography sx={{ ml: "5px" }}>ДОДАТИ В ОБРАНЕ</Typography>*/}
                 </Box>
-                <Typography>CATEGORIES: {item?.attributes?.category}</Typography>
+                <Typography>КАТЕГОРІЇ: {item?.attributes?.category}</Typography>
               </Box>
             </Box>
           </Box>
@@ -119,21 +119,21 @@ const ItemDetails = () => {
           {/* INFORMATION */}
           <Box m="20px 0">
             <Tabs value={value} onChange={handleChange}>
-              <Tab label="DESCRIPTION" value="description" />
-              <Tab label="REVIEWS" value="reviews" />
+              <Tab label="ОПИС" value="description" />
+              <Tab label="ВІДГУКИ" value="reviews" />
             </Tabs>
           </Box>
           <Box display="flex" flexWrap="wrap" gap="15px">
             {value === "description" && (
               <div>{item?.attributes?.longDescription}</div>
             )}
-            {value === "reviews" && <div>reviews</div>}
+            {value === "reviews" && <div>ТУТ БУДУТЬ ВАШІ ВІДГУКИ</div>}
           </Box>
     
           {/* RELATED ITEMS */}
           <Box mt="50px" width="100%">
             <Typography variant="h3" fontWeight="bold">
-              Related Products
+              Рекомендовані товари
             </Typography>
             <Box
               mt="20px"

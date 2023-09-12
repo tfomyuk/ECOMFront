@@ -40,18 +40,18 @@ export const Colors = {
 
     typography: {
       fontFamily: ['Bitter', 'sans-serif'].join(','),
-      fontSize: 11,
+      fontSize: 20,
       h1: {
         fontFamily: ['Bitter', 'sans-serif'].join(','),
-      fontSize: 38,
+      fontSize: 64,
       },
       h2: {
         fontFamily: ['Bitter', 'sans-serif'].join(','),
-      fontSize: 36,
+      fontSize: 40,
       },
       h3: {
         fontFamily: ['Bitter', 'sans-serif'].join(','),
-      fontSize: 20,
+      fontSize: 28,
       },
       h4: {
         fontFamily: ['Bitter', 'sans-serif'].join(','),

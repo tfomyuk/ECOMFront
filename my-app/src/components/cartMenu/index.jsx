@@ -52,7 +52,7 @@ const CartMenu = () => {
         <Box padding="30px" overflow="auto" height="100%">
           {/* HEADER */}
           <FlexBox mb="15px">
-            <Typography variant="h3">SHOPPING BAG ({cart.length})</Typography>
+            <Typography variant="h3">ТВІЙ КОШИК ({cart.length})</Typography>
             <IconButton onClick={() => dispatch(setIsCartOpen({}))}>
               <CloseIcon />
             </IconButton>
@@ -121,7 +121,7 @@ const CartMenu = () => {
           {/* ACTIONS */}
           <Box m="20px 0">
             <FlexBox m="20px 0">
-              <Typography fontWeight="bold">SUBTOTAL</Typography>
+              <Typography fontWeight="bold">ЗАГАЛОМ ДО СПЛАТИ</Typography>
               <Typography fontWeight="bold">${totalPrice}</Typography>
             </FlexBox>
             <Button
@@ -138,7 +138,7 @@ const CartMenu = () => {
                 dispatch(setIsCartOpen({}));
               }}
             >
-              CHECKOUT
+              ОПЛАТИТИ
             </Button>
           </Box>
         </Box>

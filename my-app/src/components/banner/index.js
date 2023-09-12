@@ -20,7 +20,7 @@ export default function Banner() {
             <BannerDescription fontFamily="Bitter" variant="subtitle">
                 Час носити креативні речі, які надихають створювати неповторний імідж. 100% зроблено в Україні.
             </BannerDescription>
-            <BannerShopButton fontFamily="Bitter" color="secondary">За покупками</BannerShopButton>
+            {/*<BannerShopButton fontFamily="Bitter" color="secondary">За покупками</BannerShopButton>*/}
 
         </BannerContent>
         </BannerContainer>

@@ -24,9 +24,9 @@ function Home() {
       <Banner />
       <Promotions />
       <SearchBox />
-      <Box display="flex" justifyContent={"center"} sx={{ p:4 }}>
-        <Typography variant="h4">Найпопулярніше</Typography>
-      </Box>
+       {/*<Box display="flex" justifyContent={"center"} sx={{ p:4 }}>
+       <Typography variant="h4">Найпопулярніше</Typography>
+      </Box>*/}
       <ShoppingList/>
      
   </Container>

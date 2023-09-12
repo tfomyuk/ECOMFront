@@ -22,9 +22,13 @@ const handleCloseProducts = () => {
 
 
     return (
-       
+        
         <AppbarContainer >
-            <AppbarHeader>jetcat.space</AppbarHeader>
+            <AppbarHeader onClick={() => {
+                  handleCloseProducts();
+                }}
+                component={Link}
+                to="/">jetcat.space</AppbarHeader>
 
 
             <MyList type='row'>

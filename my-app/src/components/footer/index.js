@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <Box
       sx={{
-        positon: 'absolute',
+        positon: "absolute",
         display: "flex",
         justifyContent: "center",
         background: Colors.primary,
@@ -29,71 +29,97 @@ export default function Footer() {
         p: { xs: 4, md: 10 },
         pt: 12,
         pb: 12,
-        fontSize: { xs: '12px', md: '14px' },
-        fontFamily: 'Bitter',
-        mt: '80px'
+        fontSize: { xs: "12px", md: "14px" },
+        fontFamily: "Bitter",
+        mt: "80px",
       }}
     >
       <Grid container spacing={2} justifyContent="center">
         <Grid item md={6} lg={4}>
-        <Box
+          <Box
             sx={{
               mt: 2,
               color: Colors.black,
             }}
           >
-          <FooterTitle variant="caption2" fontWeight='bold'>jetcat.space</FooterTitle>
-        
-           <IconButton
-            aria-label="Facebook.com"
-            onClick={() => window.open("https://www.facebook.com/")}
-          >
-            <FacebookIcon/>
-          </IconButton>
-          <IconButton
-            aria-label="Twitter.com"
-            onClick={() => window.open("https://twitter.com/")}
-          >
-            <TwitterIcon/>
-          </IconButton>
-          <IconButton
-            aria-label="Instagram.com"
-            onClick={() => window.open("https://www.instagram.com/")}
-          >
-            <InstagramIcon/>
-          </IconButton>
-
+            <FooterTitle variant="body1" fontWeight="bold">
+              jetcat.space
+              <IconButton
+                aria-label="Instagram.com"
+                onClick={() => window.open("https://www.instagram.com/")}
+              >
+                <InstagramIcon />
+              </IconButton>
+              <IconButton
+                aria-label="Facebook.com"
+                onClick={() => window.open("https://www.facebook.com/")}
+              >
+                <FacebookIcon />
+              </IconButton>
+              <IconButton
+                aria-label="Twitter.com"
+                onClick={() => window.open("https://twitter.com/")}
+              >
+                <TwitterIcon />
+              </IconButton>
+            </FooterTitle>
           </Box>
-          <Typography variant="caption2" >
-            Lorem ipsum dolor sit amet cons adipisicing elit sed do eiusm tempor
-            incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud.
-            Lorem ipsum dolor sit amet cons adipisicing elit sed do eiusm tempor
-            incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud.
+          <Typography variant="body1">
+            Замовити футболки з логотипом та вашим принтом. Друк на футболках та
+            одязі. Футболки з логотипом, вашими принтами під замовлення. В
+            наявності великий асортимент одягу. Всі види друку та вишивка на
+            власному обладнанні. Контроль якості на кожному етапі. Друк на одязі
+            гуртом та в роздріб від 1 шт. Маємо досвід роботи 17 років.
           </Typography>
-         
         </Grid>
         <Grid item md={6} lg={2}>
           <FooterTitle variant="body1">Наші товари</FooterTitle>
           <List>
             <ListItemText>
-            <Link href='/futbolky' color='secondary' underline="none" lineHeight={2} fontFamily='Bitter'  variant="caption2">
+              <Link
+                href="/futbolky"
+                color="secondary"
+                underline="none"
+                lineHeight={2}
+                fontFamily="Bitter"
+                variant="caption2"
+              >
                 Футболки
               </Link>
             </ListItemText>
             <ListItemText>
-              <Link href='/chashky' color='secondary' underline="none" lineHeight={2} fontFamily='Bitter' variant="caption2">
+              <Link
+                href="/chashky"
+                color="secondary"
+                underline="none"
+                lineHeight={2}
+                fontFamily="Bitter"
+                variant="caption2"
+              >
                 Чашки
               </Link>
             </ListItemText>
             <ListItemText>
-            <Link href='/shopery' color='secondary' underline="none" lineHeight={2} fontFamily='Bitter'  variant="caption2">
+              <Link
+                href="/shopery"
+                color="secondary"
+                underline="none"
+                lineHeight={2}
+                fontFamily="Bitter"
+                variant="caption2"
+              >
                 Шопери
               </Link>
             </ListItemText>
             <ListItemText>
-            <Link href='/puzzly' color='secondary' underline="none" lineHeight={2} fontFamily='Bitter'  variant="caption2">
+              <Link
+                href="/puzzly"
+                color="secondary"
+                underline="none"
+                lineHeight={2}
+                fontFamily="Bitter"
+                variant="caption2"
+              >
                 Пазли
               </Link>
             </ListItemText>
@@ -103,7 +129,14 @@ export default function Footer() {
           <FooterTitle variant="body1">Інше</FooterTitle>
           <List>
             <ListItemText>
-            <Link href='/kontakty' color='secondary' underline="none" lineHeight={2} fontFamily='Bitter' variant="body1">
+              <Link
+                href="/kontakty"
+                color="secondary"
+                underline="none"
+                lineHeight={2}
+                fontFamily="Bitter"
+                variant="body1"
+              >
                 Контакти
               </Link>
             </ListItemText>
@@ -111,7 +144,8 @@ export default function Footer() {
               <Typography lineHeight={2} variant="caption2">
                 Особистий кабінет
               </Typography>
-            </ListItemText><ListItemText>
+            </ListItemText>
+            <ListItemText>
               <Typography lineHeight={2} variant="caption2">
                 Обране
               </Typography>
@@ -126,7 +160,6 @@ export default function Footer() {
                 Terms &amp; Conditions
               </Typography>
             </ListItemText>
-            
           </List>
         </Grid>
         <Grid item md={6} lg={4}>

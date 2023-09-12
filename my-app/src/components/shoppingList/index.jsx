@@ -29,22 +29,22 @@ const ShoppingList = () => {
   }, []);
 
   const topRatedItems = items.filter(
-    (item) => item.attributes.category === "topRated"
+    (item) => item.attributes.category === "ТОП"
   );
 
   const newArrivalsItems = items.filter(
-    (item) => item.attributes.category === "newArrivals"
+    (item) => item.attributes.category === "Новинки"
   );
 
   const bestSellersItems = items.filter(
-    (item) => item.attributes.category === "bestSellers"
+    (item) => item.attributes.category === "Бестселлери"
   );
 
   return (
     <Box width="80%" margin="80px auto">
-      <Typography variant="h3" textAlign="center">
-        Найкращі <b>пропозиції</b>
-      </Typography>
+      {/*<Typography variant="h3" textAlign="center">
+        Найкращі пропозиції
+      </Typography>*/}
       <Tabs
         textColor="secondary"
         indicatorColor="primary"
@@ -60,9 +60,9 @@ const ShoppingList = () => {
         }}
       >
         <Tab label='ВСІ ТОВАРИ' value="all" />
-        <Tab label='НОВІ ТОВАРИ' value="newArrivals" />
-        <Tab label='БЕСТСЕЛЛЕРИ' value="bestSellers" />
-        <Tab label='ПОПУЛЯРНІ ТОВАРИ' value="topRated" />
+        <Tab label='НОВІ ТОВАРИ' value="Новинки" />
+        <Tab label='БЕСТСЕЛЛЕРИ' value="Бестселлери" />
+        <Tab label='ПОПУЛЯРНІ ТОВАРИ' value="ТОП" />
       </Tabs>
       <Box
       margin='0 auto'
@@ -76,15 +76,15 @@ const ShoppingList = () => {
           items.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
-        {value === "newArrivals" &&
+        {value === "Новинки" &&
           newArrivalsItems.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
-        {value === "bestSellers" &&
+        {value === "Бестселлери" &&
           bestSellersItems.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
-        {value === "topRated" &&
+        {value === "ТОП" &&
           topRatedItems.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
