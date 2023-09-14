@@ -38,8 +38,8 @@ import { useState } from "react";
           <DrawerCloseButton onClick={() => setDrawerOpen(false)}>
             <CloseIcon
               sx={{
-                fontSize: "2.5rem",
-                color: lighten(0.09, Colors.primary),
+                fontSize: "1.5rem",
+                color: lighten(0.09, Colors.black),
               }}
             />
           </DrawerCloseButton>

@@ -22,7 +22,7 @@ const handleCloseProducts = () => {
 
 
     return (
-        
+       
         <AppbarContainer >
             <AppbarHeader onClick={() => {
                   handleCloseProducts();
