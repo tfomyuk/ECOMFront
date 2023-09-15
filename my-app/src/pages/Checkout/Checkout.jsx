@@ -3,10 +3,10 @@ import { Box, Button, Stepper, Step, StepLabel } from "@mui/material";
 import { Formik } from "formik";
 import { useState } from "react";
 import * as yup from "yup";
-import { Colors } from "../../styles/theme"; 
+
+import { loadStripe } from "@stripe/stripe-js";
 import Shipping from "../../components/shipping";
 import Payment from "../../components/shipping/payment";
-import { loadStripe } from "@stripe/stripe-js"
 
 const stripePromise = loadStripe(
   "pk_test_51NqLzfI5RX59rZDgrzCXgzw975abzVEX18RUSRBUpkTnSXRg5iMbMhoxLyIlfhEarxcRSlY1eo1ZqbsduJYJFc7H00XX36dOES"
@@ -62,10 +62,10 @@ const Checkout = () => {
     <Box width="80%" m="100px auto">
       <Stepper activeStep={activeStep} sx={{ m: "20px 0" }}>
         <Step>
-          <StepLabel>Billing</StepLabel>
+          <StepLabel>Реквізити</StepLabel>
         </Step>
         <Step>
-          <StepLabel>Payment</StepLabel>
+          <StepLabel>Оплата</StepLabel>
         </Step>
       </Stepper>
       <Box>
@@ -119,7 +119,7 @@ const Checkout = () => {
                     }}
                     onClick={() => setActiveStep(activeStep - 1)}
                   >
-                    Back
+                    Назад
                   </Button>
                 )}
                 <Button
@@ -135,7 +135,7 @@ const Checkout = () => {
                     padding: "15px 40px",
                   }}
                 >
-                  {!isSecondStep ? "Next" : "Place Order"}
+                  {!isSecondStep ? "Далі" : "Підтвердити замовлення"}
                 </Button>
               </Box>
             </form>

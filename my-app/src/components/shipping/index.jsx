@@ -3,25 +3,24 @@ import AddressForm from "./addressForm";
 
 const Shipping = ({
   values,
-  errors,
   touched,
-  handleBlur,
+  errors,
   handleChange,
-  handleSubmit,
+  handleBlur,
   setFieldValue,
 }) => {
   return (
     <Box m="30px auto">
-      {/*SHIPPING FORM*/}
+      {/* BILLING FORM */}
       <Box>
         <Typography sx={{ mb: "15px" }} fontSize="18px">
-          Shipping Information
+         Адреса рахунку
         </Typography>
         <AddressForm
-          type="shippingAddress"
-          value={values.shippingAddress}
-          errors={errors}
+          type="billingAddress"
+          values={values.billingAddress}
           touched={touched}
+          errors={errors}
           handleBlur={handleBlur}
           handleChange={handleChange}
         />
@@ -29,36 +28,36 @@ const Shipping = ({
 
       <Box mb="20px">
         <FormControlLabel
-          label="Same for Billing Address"
           control={
             <Checkbox
               defaultChecked
-              value={values.billingAddress.isSameAddress}
+              value={values.shippingAddress.isSameAddress}
               onChange={() =>
                 setFieldValue(
-                  "billingAddress.isSameAddress",
-                  !values.billingAddress.isSameAddress
+                  "shippingAddress.isSameAddress",
+                  !values.shippingAddress.isSameAddress
                 )
               }
             />
           }
+          label="Співпадає з адресою доставки"
         />
       </Box>
 
-      {/*BILLING FORM */}
-      {!values.billingAddress.isSameAddress && (
+      {/* SHIPPING FORM */}
+      {!values.shippingAddress.isSameAddress && (
         <Box>
           <Typography sx={{ mb: "15px" }} fontSize="18px">
-            Billing Information
+            Адреса доставки
           </Typography>
           <AddressForm
-          type="billingAddress"
-          value={values.billingAddress}
-          errors={errors}
-          touched={touched}
-          handleBlur={handleBlur}
-          handleChange={handleChange}
-        />
+            type="shippingAddress"
+            values={values.shippingAddress}
+            touched={touched}
+            errors={errors}
+            handleBlur={handleBlur}
+            handleChange={handleChange}
+          />
         </Box>
       )}
     </Box>

@@ -37,7 +37,7 @@ const AddressForm = ({
       <TextField
         fullWidth
         type="text"
-        label="First Name"
+        label="Ім'я"
         onBlur={handleBlur}
         onChange={handleChange}
         value={values.firstName}
@@ -49,7 +49,7 @@ const AddressForm = ({
       <TextField
         fullWidth
         type="text"
-        label="Last Name"
+        label="Прізвище"
         onBlur={handleBlur}
         onChange={handleChange}
         value={values.lastName}
@@ -61,7 +61,7 @@ const AddressForm = ({
       <TextField
         fullWidth
         type="text"
-        label="Country"
+        label="Країна"
         onBlur={handleBlur}
         onChange={handleChange}
         value={values.country}
@@ -73,7 +73,7 @@ const AddressForm = ({
       <TextField
         fullWidth
         type="text"
-        label="Street Address"
+        label="Адреса"
         onBlur={handleBlur}
         onChange={handleChange}
         value={values.street1}
@@ -85,7 +85,7 @@ const AddressForm = ({
       <TextField
         fullWidth
         type="text"
-        label="Street Address 2 (optional)"
+        label="Адреса2 (опційно)"
         onBlur={handleBlur}
         onChange={handleChange}
         value={values.street2}
@@ -97,7 +97,7 @@ const AddressForm = ({
       <TextField
         fullWidth
         type="text"
-        label="City"
+        label="Місто"
         onBlur={handleBlur}
         onChange={handleChange}
         value={values.city}
@@ -109,7 +109,7 @@ const AddressForm = ({
       <TextField
         fullWidth
         type="text"
-        label="State"
+        label="Область"
         onBlur={handleBlur}
         onChange={handleChange}
         value={values.state}
@@ -121,7 +121,7 @@ const AddressForm = ({
       <TextField
         fullWidth
         type="text"
-        label="Zip Code"
+        label="Індекс"
         onBlur={handleBlur}
         onChange={handleChange}
         value={values.zipCode}
