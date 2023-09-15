@@ -16,7 +16,7 @@ export const AppbarContainer = styled(Box)(() => ({
 export const AppbarHeader = styled(Typography)(() => ({
   padding: "4px",
   flexGrow: 1,
-  fontSize: "2em",
+  fontSize: "1.5em",
   fontFamily:'Bitter',
   fontWeight: 'bold',
   underline: "none",

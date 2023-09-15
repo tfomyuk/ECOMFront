@@ -1,10 +1,8 @@
 import { Box, Container, Typography } from '@mui/material'
 import { useEffect } from 'react';
-import Banner from '../../components/banner';
-import Promotions from '../../components/promotions';
 import SearchBox from '../../components/search';
-import Products from '../../components/products';
 import ShoppingList from '../../components/shoppingList';
+import MainCarousel from '../../components/carousel';
 
 
 
@@ -14,22 +12,26 @@ function Home() {
   },[]);
 
   return (
-   
+    <>
+    <Box display="flex" justifyContent={"center"} sx={{ p:4 }}>
+       <Typography variant="h3" color="secondary">Прагнемо створювати креативні речі, які надихають і збагачують життя</Typography>
+      </Box>
   <Container
-  maxWidth = 'xl'
+  maxWidth = '1900'
   sx={{
     background: '#fff'
   }}
   >
-      <Banner />
-      <Promotions />
-      <SearchBox />
-       {/*<Box display="flex" justifyContent={"center"} sx={{ p:4 }}>
-       <Typography variant="h4">Найпопулярніше</Typography>
-      </Box>*/}
-      <ShoppingList/>
+      <MainCarousel />
+     {/* <Promotions /> */}
      
+      <SearchBox />
+      
+       <Box>
+      <ShoppingList/>
+      </Box>
   </Container>
+  </>
 
   );
 }

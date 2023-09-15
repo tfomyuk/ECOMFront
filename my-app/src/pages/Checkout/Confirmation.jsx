@@ -7,8 +7,8 @@ const Confirmation = () => {
     <Box m="90px auto" width="80%" height="50vh">
       <Alert severity="success">
         <AlertTitle>Success</AlertTitle>
-        {/*Ваше замовлення прийнято! Очікуйте зв'язок протягом 48 годин {" "}
-        <strong>Вітаємо, Ви зробили найкращий вибір!</strong>—*/}
+        You have successfully made an Order —{" "}
+        <strong>Congrats on Making your Purchase</strong>
       </Alert>
     </Box>
   );

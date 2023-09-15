@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setItems } from "../../state";
 import Item from "../item";
+import AppPagination from "../pagination";
 
 const ShoppingList = () => {
   const dispatch = useDispatch();
@@ -88,6 +89,7 @@ const ShoppingList = () => {
           topRatedItems.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
+          <AppPagination setItems={(p) => setItems(p)} />
 
       </Box>
     </Box>

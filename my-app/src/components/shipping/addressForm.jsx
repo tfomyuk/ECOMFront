@@ -73,7 +73,7 @@ const AddressForm = ({
       <TextField
         fullWidth
         type="text"
-        label="Адреса"
+        label="Ds"
         onBlur={handleBlur}
         onChange={handleChange}
         value={values.street1}

@@ -14,6 +14,7 @@ export const Colors = {
     border: "#DDDFE1",
     inverse: "#2F3D4A",
     shaft: "#333",
+    button: "#23A0C5",
     ///////////////
     // Grays
     ///////////////

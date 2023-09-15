@@ -40,7 +40,6 @@ export default function Products() {
       >
         {renderProducts}
       </Grid>
-      <AppPagination setProducts={(p) => setProducts(p)} />
     </Container>
   );
 }

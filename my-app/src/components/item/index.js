@@ -14,7 +14,7 @@ const Item = ({ item, width }) => {
   const [count, setCount] = useState(1);
   const [isHovered, setIsHovered] = useState(false);
   const {
-    palette: {primary},
+    palette: {secondary},
   } = useTheme();
 
   const { category, price, name, image } = item.attributes;
@@ -22,7 +22,7 @@ const Item = ({ item, width }) => {
     data: {
       attributes: {
         formats: {
-          small: { url },
+          medium: { url },
         }
       }
     }
@@ -57,13 +57,13 @@ const Item = ({ item, width }) => {
             <Box
               display="flex"
               alignItems="center"
-              backgroundColor={Colors.primary}
-              borderRadius="3px"
+              backgroundColor={Colors.button}
+              borderRadius="20px"
             >
               <IconButton onClick={() => setCount(Math.max(count - 1, 1))}>
                 <RemoveIcon />
               </IconButton>
-              <Typography color={Colors.black}>{count}</Typography>
+              <Typography  color={Colors.white}>{count}</Typography>
               <IconButton onClick={() => setCount(count + 1)}>
                 <AddIcon />
               </IconButton>
@@ -73,9 +73,9 @@ const Item = ({ item, width }) => {
               onClick={() => {
                 dispatch(addToCart({ item: { ...item, count } }));
               }}
-              sx={{ backgroundColor: Colors.primary, color: "black" }}
+              sx={{ backgroundColor: Colors.button, color: "white", borderRadius: "20px" }}
             >
-              ДОДАТИ У КОШИК
+              Додати у кошик
             </Button>
           </Box>
         </Box>

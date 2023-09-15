@@ -23,11 +23,10 @@ function Default() {
             <Outlet />
           </section>
 
-          <Footer />
-
           <AppDrawer />
           <CartMenu />
           <SearchBox />
+          <Footer />
         </UIProvider>
       </Stack>
     </ThemeProvider>

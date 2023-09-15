@@ -38,7 +38,6 @@ export default function AppPagination({setProducts}) {
             onChange={handlePageChange}
             />
 
- 
          </Box>
     );
 };
