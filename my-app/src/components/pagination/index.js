@@ -2,9 +2,9 @@ import { Box, Pagination } from "@mui/material";
 import { useEffect, useState } from "react";
 import service from "../../services";
 
-const pageSize =3;
+const pageSize = 6;
 
-export default function AppPagination({setProducts}) {
+export default function AppPagination({setItems}) {
 
     const [pagination, setPagination] = useState({
         count: 0,
@@ -16,7 +16,7 @@ export default function AppPagination({setProducts}) {
     useEffect (() => {
         service.getData({from: pagination.from, to: pagination.to}).then(response => {
             setPagination({...pagination, count: response.count});
-            setProducts(response.data)
+            setItems(response.data)
         })
     },[pagination.from, pagination.to]);
 

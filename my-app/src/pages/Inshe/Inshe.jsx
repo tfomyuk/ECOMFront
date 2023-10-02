@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { ContactForm } from "../../components/contactForm";
-import { Box } from "@mui/material";
+import { Box, Container } from "@mui/material";
 
 
 function Inshe() {
@@ -10,14 +10,14 @@ function Inshe() {
 
   return (
    
-            <Box
+            <Container
               display="flex"
-              justifyContent={"center"}
+              justifycontent={"center"}
               sx={{ p: 4 }}
               backgroundimage={`url(/images/banner/banner.png)`}
             >
-              <ContactForm />
-            </Box>
+             dxfcghjklcvbnmlkjhgfdszxcv bnhgfcvbgfcvbhg
+            </Container>
            
   );
 }

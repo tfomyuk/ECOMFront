@@ -89,9 +89,11 @@ const ShoppingList = () => {
           topRatedItems.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
-          <AppPagination setItems={(p) => setItems(p)} />
+
+       
 
       </Box>
+      {/*<AppPagination />*/}
     </Box>
   );
 };

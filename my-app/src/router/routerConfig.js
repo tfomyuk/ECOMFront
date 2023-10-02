@@ -36,10 +36,10 @@ const appRouter = createBrowserRouter([
         path: "/puzzly",
         element: <Puzzles />,
       },
-      {
+      {/*{
         path: "/inshe",
         element: <Inshe />,
-      },
+      },*/},
       { path: "/kontakty", element: <Contact /> },
       { path: "/checkout", element: <Checkout /> },
       { path: "/checkout/success", element: <Confirmation /> },

@@ -72,7 +72,7 @@ const handleCloseProducts = () => {
                 Пазли
               </MenuItem>
 
-              <MenuItem
+              {/*<MenuItem
                 onClick={() => {
                   handleCloseProducts();
                 }}
@@ -80,7 +80,7 @@ const handleCloseProducts = () => {
                 to="/inshe"
               >
                 Інше
-              </MenuItem>
+              </MenuItem>*/}
 
               <MenuItem
                 onClick={() => {

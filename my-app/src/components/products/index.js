@@ -8,6 +8,7 @@ import { useState } from "react";
 export default function Products() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("md"));
+ 
   const [products, setProducts] = useState([]);
 
   const renderProducts = products.map((product) => (

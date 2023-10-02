@@ -79,14 +79,14 @@ import { useState } from "react";
               <ListItemText>Шопери</ListItemText>
             </ListItemButton>
             <MiddleDivider />
-             <ListItemButton onClick={() => {
+             {/*<ListItemButton onClick={() => {
                   handleCloseProducts();
                 }}
                 component={Link}
                 to="/inshe">
               <ListItemText>Інше</ListItemText>
             </ListItemButton>
-            <MiddleDivider />
+            <MiddleDivider />*/}
             <ListItemButton onClick={() => {
                   handleCloseProducts();
                 }}

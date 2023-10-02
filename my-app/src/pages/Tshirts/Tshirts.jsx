@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Products from '../../components/products';
 import { useDispatch, useSelector } from 'react-redux';
 import { Box, Tab, Tabs, useMediaQuery } from '@mui/material';
 import { setItems } from '../../state';

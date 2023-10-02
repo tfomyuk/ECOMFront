@@ -13,7 +13,7 @@ export default function AppbarMobile({ matches }) {
         <MenuIcon />
       </IconButton>
       <AppbarHeader textAlign={"center"} variant="h4">
-       JetCat.space
+       jetcat.space
       </AppbarHeader>
       <IconButton >
         <SearchIcon onClick={() => setShowSearchBox(true)}/>

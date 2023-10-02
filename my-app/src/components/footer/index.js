@@ -141,7 +141,7 @@ export default function Footer() {
               </Link>
             </ListItemText>
             <ListItemText>
-              <Typography lineHeight={2} variant="caption2">
+              <Typography lineHeight={2} variant="caption1">
                 Особистий кабінет
               </Typography>
             </ListItemText>

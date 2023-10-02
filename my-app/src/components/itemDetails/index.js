@@ -43,6 +43,7 @@ const ItemDetails = () => {
         setItems(itemsJson.data);
       }
     
+      
       useEffect(() => {
         getItem();
         getItems();
